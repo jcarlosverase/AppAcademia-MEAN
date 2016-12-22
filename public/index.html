@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="alumnos">
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>AppAcademia</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+        <script src="/node_modules/angular/angular.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="container" ng-controller="alumnosCtr as vm">
+            <header>
+                <h1>{{ vm.Titulo }}</h1>
+            </header>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot>
+                    <tr ng-repeat="alumno in vm.ListaAlumnosInfo">
+                        <td>{{ alumno.nombres }}</td>
+                        <td>{{ alumno.apellidos }}</td>
+                        <td>{{ alumno.email }}</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </body>
+</html>

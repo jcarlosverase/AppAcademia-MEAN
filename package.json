@@ -1,0 +1,29 @@
+{
+  "name": "appacademia-mean",
+  "version": "1.0.0",
+  "description": "App academy.",
+  "engines": {
+    "node": "6.9.2",
+    "npm": "3.10.9"
+  },
+  "main": "node server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcarlosverase/AppAcademia-MEAN.git"
+  },
+  "author": "@jcarlosverase",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcarlosverase/AppAcademia-MEAN/issues"
+  },
+  "homepage": "https://github.com/jcarlosverase/AppAcademia-MEAN#readme",
+  "dependencies": {
+    "angular": "^1.6.0",
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.4"
+  }
+}
