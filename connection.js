@@ -3,7 +3,8 @@ var con = '';
 
 if (env == 'developer')
 {
-    con = 'mongodb://localhost:27017/appacademia';
+    //con = 'mongodb://localhost:27017/appacademia';
+    con = 'mongodb://jcarlosverase:jcarlosverase@ds139288.mlab.com:39288/appacademia';
 }
 else
 {
