@@ -36,8 +36,8 @@
                             <input type="text" class="form-control" ng-model="vm.alumno.email" placeholder="Email"/>
                         </td>
                         <td>
-                            <input type="button" class="btn" value="Agregar" ng-disabled="vm.alumno._id" ng-click="vm.addAlumno()"/>
-                            <input type="button" class="btn" value="Actualizar" ng-disabled="!vm.alumno._id" ng-click="vm.updateAlumno(vm.alumno._id)"/>
+                            <input type="button" class="btn btn-primary" value="Agregar" ng-disabled="vm.alumno._id" ng-click="vm.addAlumno()"/>
+                            <input type="button" class="btn btn-success" value="Actualizar" ng-disabled="!vm.alumno._id" ng-click="vm.updateAlumno(vm.alumno._id)"/>
                         </td>
                     </tr>
                     <tr ng-repeat="alumno in vm.ListaAlumnosInfo">
@@ -45,8 +45,8 @@
                         <td>{{ alumno.apellidos }}</td>
                         <td>{{ alumno.email }}</td>
                         <td>
-                            <input type="button" class="btn" value="Editar" ng-click="vm.editAlumno(alumno._id)"/>
-                            <input type="button" class="btn" value="Eliminar" ng-click="vm.deleteAlumno(alumno._id)"/>
+                            <input type="button" class="btn btn-warning" value="Editar" ng-click="vm.editAlumno(alumno._id)"/>
+                            <input type="button" class="btn btn-danger" value="Eliminar" ng-click="vm.deleteAlumno(alumno._id)"/>
                         </td>
                     </tr>
                 </tfoot>
